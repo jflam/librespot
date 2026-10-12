@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-12",
+  "cpu_normalization": "100% = one logical core",
+  "decoder": {
+    "verification": {
+      "full": {
+        "samples": 1411200,
+        "max_abs_error": 8.940696716308594e-08,
+        "rms_error": 1.0476999450685877e-08,
+        "packet_metadata_equal": true,
+        "all_finite": true
+      },
+      "seek": {
+        "samples": 905344,
+        "max_abs_error": 8.940696716308594e-08,
+        "rms_error": 1.0413207194713848e-08,
+        "packet_metadata_equal": true,
+        "all_finite": true
+      }
+    },
+    "seek": {
+      "scalar": {
+        "label": "scalar",
+        "seek_requested_ms": 5731,
+        "seek_returned_ms": 5712
+      },
+      "simd": {
+        "label": "simd",
+        "seek_requested_ms": 5731,
+        "seek_returned_ms": 5712
+      }
+    },
+    "runs": [
+      {
+        "label": "scalar",
+        "simd": false,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.415978,
+        "wall_seconds": 2.421299666,
+        "realtime_cpu_percent": 0.075499312,
+        "pair": 0
+      },
+      {
+        "label": "simd",
+        "simd": true,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.115576,
+        "wall_seconds": 2.120802166,
+        "realtime_cpu_percent": 0.06611175,
+        "pair": 0
+      },
+      {
+        "label": "simd",
+        "simd": true,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.129893,
+        "wall_seconds": 2.135004208,
+        "realtime_cpu_percent": 0.066559156,
+        "pair": 1
+      },
+      {
+        "label": "scalar",
+        "simd": false,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.421522,
+        "wall_seconds": 2.427440583,
+        "realtime_cpu_percent": 0.075672562,
+        "pair": 1
+      },
+      {
+        "label": "scalar",
+        "simd": false,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.430886,
+        "wall_seconds": 2.436668,
+        "realtime_cpu_percent": 0.075965188,
+        "pair": 2
+      },
+      {
+        "label": "simd",
+        "simd": true,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.122982,
+        "wall_seconds": 2.127994959,
+        "realtime_cpu_percent": 0.066343187,
+        "pair": 2
+      },
+      {
+        "label": "simd",
+        "simd": true,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.109973,
+        "wall_seconds": 2.114865041,
+        "realtime_cpu_percent": 0.065936656,
+        "pair": 3
+      },
+      {
+        "label": "scalar",
+        "simd": false,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.418262,
+        "wall_seconds": 2.423863583,
+        "realtime_cpu_percent": 0.075570687,
+        "pair": 3
+      },
+      {
+        "label": "scalar",
+        "simd": false,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.412948,
+        "wall_seconds": 2.418608875,
+        "realtime_cpu_percent": 0.075404625,
+        "pair": 4
+      },
+      {
+        "label": "simd",
+        "simd": true,
+        "passes": 200,
+        "samples_per_pass": 1411200,
+        "packets_per_pass": 691,
+        "audio_seconds": 3200.0,
+        "cpu_seconds": 2.109569,
+        "wall_seconds": 2.114636625,
+        "realtime_cpu_percent": 0.065924031,
+        "pair": 4
+      }
+    ],
+    "median_realtime_cpu_percent": {
+      "scalar": 0.075570687,
+      "simd": 0.06611175
+    },
+    "median_cpu_reduction_percent": 12.516674620147361
+  },
+  "live_cpu_windows": {
+    "liner-minimized-spectrum-on-repeat": [
+      {
+        "elapsed_seconds": 30.123392249981407,
+        "liner_notes_cpu_percent": 4.3819766015921,
+        "spotify_tree_cpu_percent": 0.9295101882166679
+      },
+      {
+        "elapsed_seconds": 30.12035733301309,
+        "liner_notes_cpu_percent": 4.4156182653991305,
+        "spotify_tree_cpu_percent": 0.8632035706795265
+      }
+    ],
+    "liner-minimized-spectrum-off": [
+      {
+        "elapsed_seconds": 30.128168041002937,
+        "liner_notes_cpu_percent": 3.2527699615398404,
+        "spotify_tree_cpu_percent": 5.377027895606648
+      },
+      {
+        "elapsed_seconds": 30.125909458001843,
+        "liner_notes_cpu_percent": 3.352595882318666,
+        "spotify_tree_cpu_percent": 1.825671025025137
+      }
+    ],
+    "spotify-minimized-playing": [
+      {
+        "elapsed_seconds": 30.11064341699239,
+        "liner_notes_cpu_percent": 1.5276990053968325,
+        "spotify_tree_cpu_percent": 2.690078683416324
+      },
+      {
+        "elapsed_seconds": 30.125728167011403,
+        "liner_notes_cpu_percent": 1.5269340460414897,
+        "spotify_tree_cpu_percent": 2.5891490345919146
+      }
+    ]
+  }
+}
