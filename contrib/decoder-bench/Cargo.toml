@@ -1,0 +1,17 @@
+[package]
+name = "decoder-bench"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+publish = false
+
+# Keep this opt-in experiment outside the production workspace feature graph.
+[workspace]
+
+[features]
+simd = ["symphonia/opt-simd"]
+
+[dependencies]
+librespot-playback = { path = "../../playback", default-features = false, features = ["native-tls"] }
+symphonia = { version = "=0.5.5", default-features = false }
+libc = "0.2"
