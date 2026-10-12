@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- [contrib] Add an isolated Vorbis SIMD experiment and macOS CPU investigation notes; playback defaults are unchanged.
+
 ## [0.8.0] - 2025-11-10
 
 ### Added
